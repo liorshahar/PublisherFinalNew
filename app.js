@@ -18,9 +18,9 @@ app.use('/user', userRoutes);
 app.get('/' , (req , res)=>{
     res.status(200).json({'main routes': 
         [
-        {'publisher routes': '/publisher'},
-        {'books routes': '/book'},
-        {'user routes': '/user'}
+        {'publisher routes': 'https://hanan-lior-publisher-app.herokuapp.com/publisher'},
+        {'books routes': 'https://hanan-lior-publisher-app.herokuapp.com/book'},
+        {'user routes': 'https://hanan-lior-publisher-app.herokuapp.com/user'}
     ]});
 })
 module.exports = app;
